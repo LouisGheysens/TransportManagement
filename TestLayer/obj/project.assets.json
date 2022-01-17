@@ -1670,6 +1670,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "BussinesLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BussinesLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BussinesLayer.dll": {}
+        }
       }
     }
   },
@@ -5962,10 +5972,16 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "BussinesLayer/1.0.0": {
+      "type": "project",
+      "path": "../BussinesLayer/BussinesLayer.csproj",
+      "msbuildProject": "../BussinesLayer/BussinesLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "BussinesLayer >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.11.0",
       "coverlet.collector >= 3.1.0",
       "xunit >= 2.4.1",
@@ -6006,7 +6022,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Eigenaar\\TransportManagement\\BussinesLayer\\BussinesLayer.csproj": {
+              "projectPath": "C:\\Users\\Eigenaar\\TransportManagement\\BussinesLayer\\BussinesLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
