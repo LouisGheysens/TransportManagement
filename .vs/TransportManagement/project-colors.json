@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "eb0c9503-7682-4aab-949a-ca6d00119190": {
+      "ProjectGuid": "eb0c9503-7682-4aab-949a-ca6d00119190",
+      "DisplayName": "APP",
+      "ColorIndex": 0
+    },
+    "2d33a848-78a5-49a5-a9bd-476abd5b9e97": {
+      "ProjectGuid": "2d33a848-78a5-49a5-a9bd-476abd5b9e97",
+      "DisplayName": "BussinesLayer",
+      "ColorIndex": 1
+    },
+    "17cbe1fa-cbb2-4f4f-8319-199fd0ad770a": {
+      "ProjectGuid": "17cbe1fa-cbb2-4f4f-8319-199fd0ad770a",
+      "DisplayName": "DataLayer",
+      "ColorIndex": 2
+    },
+    "935adf05-4ec2-4779-a4be-5cb7e464c505": {
+      "ProjectGuid": "935adf05-4ec2-4779-a4be-5cb7e464c505",
+      "DisplayName": "TestLayer",
+      "ColorIndex": 3
+    },
+    "82d62c02-b3bd-42f7-8ab9-9821e72a29f1": {
+      "ProjectGuid": "82d62c02-b3bd-42f7-8ab9-9821e72a29f1",
+      "DisplayName": "WPF",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
