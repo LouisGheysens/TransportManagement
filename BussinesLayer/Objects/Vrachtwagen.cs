@@ -2,7 +2,12 @@
 {
     public class Vrachtwagen
     {
-        public Vrachtwagen(string chassisNummer, string merk, string model, float gewicht, bool heeftAanhangWagen, Brandstof brandstof, Chauffeur? chauffeur)
+        public Vrachtwagen(string chassisNummer, string merk, string model, float gewicht, bool heeftAanhangWagen, Brandstof brandstof, Chauffeur? chauffeur) : this(chassisNummer, merk, model, gewicht, heeftAanhangWagen, brandstof)
+        {
+            this.Chauffeur = chauffeur;
+        }
+
+        public Vrachtwagen(string chassisNummer, string merk, string model, float gewicht, bool heeftAanhangWagen, Brandstof brandstof)
         {
             ZetChassisnummer(chassisNummer);
             ZetMerk(merk);
@@ -10,8 +15,8 @@
             ZetGewicht(gewicht);
             ZetBoolean(heeftAanhangWagen);
             ZetEnum(brandstof);
-            this.Chauffeur = chauffeur;
         }
+
         public string ChassisNummer { get; private set; }
 
         public string Merk { get; private set; }
@@ -52,7 +57,7 @@
         {
             if (string.IsNullOrWhiteSpace(model))
             {
-                VrachtwagenException ex = new VrachtwagenException("Vrachtwageb: model is niet in correct formaat!");
+                VrachtwagenException ex = new VrachtwagenException("Vrachtwagen: model is niet in correct formaat!");
                 ex.Data.Add("model", model);
                 throw ex;
             }
@@ -61,9 +66,9 @@
 
         public void ZetGewicht(float gewicht)
         {
-            if(gewicht < 18000 || gewicht > 50000)
+            if(gewicht < 18000F || gewicht > 50000F)
             {
-                VrachtwagenException ex = new VrachtwagenException("Vrachtwagen: gewiht klopt niet!");
+                VrachtwagenException ex = new VrachtwagenException("Vrachtwagen: gewicht klopt niet!");
                 ex.Data.Add("gewicht", gewicht);
                 throw ex;
             }
