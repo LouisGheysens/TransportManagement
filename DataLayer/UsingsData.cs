@@ -1,0 +1,10 @@
+﻿global using System;
+global using System.Text;
+global using System.Collections.Generic;
+global using Microsoft.Data.SqlClient;
+global using BussinesLayer.Enums;
+global using BussinesLayer.Objects;
+global using BussinesLayer.Managers;
+global using BussinesLayer.Exceptions;
+global using BussinesLayer.Interfaces;
+global using DataLayer.Exceptions;
