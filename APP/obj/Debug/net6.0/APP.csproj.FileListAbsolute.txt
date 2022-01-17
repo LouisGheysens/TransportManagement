@@ -1,0 +1,15 @@
+C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\APP.exe
+C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\APP.deps.json
+C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\APP.runtimeconfig.json
+C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\APP.dll
+C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\ref\APP.dll
+C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\APP.pdb
+C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.csproj.AssemblyReference.cache
+C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.AssemblyInfoInputs.cache
+C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.AssemblyInfo.cs
+C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.csproj.CoreCompileInputs.cache
+C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.dll
+C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\ref\APP.dll
+C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.pdb
+C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.genruntimeconfig.cache

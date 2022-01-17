@@ -1,0 +1,12 @@
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\bin\Debug\net6.0\BussinesLayer.deps.json
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\bin\Debug\net6.0\BussinesLayer.dll
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\bin\Debug\net6.0\ref\BussinesLayer.dll
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\bin\Debug\net6.0\BussinesLayer.pdb
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\obj\Debug\net6.0\BussinesLayer.csproj.AssemblyReference.cache
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\obj\Debug\net6.0\BussinesLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\obj\Debug\net6.0\BussinesLayer.AssemblyInfoInputs.cache
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\obj\Debug\net6.0\BussinesLayer.AssemblyInfo.cs
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\obj\Debug\net6.0\BussinesLayer.csproj.CoreCompileInputs.cache
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\obj\Debug\net6.0\BussinesLayer.dll
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\obj\Debug\net6.0\ref\BussinesLayer.dll
+C:\Users\Eigenaar\TransportManagement\BussinesLayer\obj\Debug\net6.0\BussinesLayer.pdb

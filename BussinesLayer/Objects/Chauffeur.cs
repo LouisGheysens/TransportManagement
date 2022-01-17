@@ -2,13 +2,17 @@
 {
     public class Chauffeur
     {
-        public Chauffeur(int personeelsNummer, string naam, DateTime geboortedatum, bool internationaal, Vrachtwagen? vrachtwagen)
+        public Chauffeur(int personeelsNummer, string naam, DateTime geboortedatum, bool internationaal, Vrachtwagen vrachtwagen) : this(personeelsNummer, naam, geboortedatum, internationaal)
+        {
+            this.Vrachtwagen = vrachtwagen;
+        }
+
+        public Chauffeur(int personeelsNummer, string naam, DateTime geboortedatum, bool internationaal)
         {
             ZetPersoneelsNummer(personeelsNummer);
             ZetNaam(naam);
             ZetGeboortedatum(geboortedatum);
             ZetBoolean(internationaal);
-            this.Vrachtwagen = vrachtwagen;
         }
 
         public int PersoneelsNummer { get; private set; }
@@ -19,7 +23,7 @@
 
         public Boolean Internationaal { get; private set; }
 
-        public Vrachtwagen? Vrachtwagen { get; private set; }
+        public Vrachtwagen Vrachtwagen { get; private set; }
 
         public void ZetNaam(string naam)
         {
@@ -80,7 +84,7 @@
 
         public override string ToString()
         {
-            return $"Naam:{Naam}\nGeboortedatum: {Geboortedatum.ToShortDateString()}\nPersoneelsnummer: {PersoneelsNummer},\n{BoolToText(Internationaal)}\nVrachtwagen: {Vrachtwagen?.ToString()}";
+            return $"Naam:{Naam}\nGeboortedatum: {Geboortedatum.ToShortDateString()}\nPersoneelsnummer: {PersoneelsNummer},\n{BoolToText(Internationaal)}\nVrachtwagen: {Vrachtwagen.ToString()}";
         }
 
     }
