@@ -9,7 +9,7 @@
             this._repo = repo;
         }
 
-        public bool BestaatChauffeur(int personeelsnummer)
+        public bool BestaatChauffeur(string personeelsnummer)
         {
             try
             {

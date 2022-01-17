@@ -2,22 +2,24 @@
 {
     public class Chauffeur
     {
-        public Chauffeur(int personeelsNummer, string naam, DateTime geboortedatum, bool internationaal, Vrachtwagen vrachtwagen) : this(personeelsNummer, naam, geboortedatum, internationaal)
+        public Chauffeur(string personeelsNummer, string voornaam, string achternaam, DateTime geboortedatum, bool internationaal, Vrachtwagen vrachtwagen) : this(personeelsNummer, voornaam, achternaam, geboortedatum, internationaal)
         {
             this.Vrachtwagen = vrachtwagen;
         }
 
-        public Chauffeur(int personeelsNummer, string naam, DateTime geboortedatum, bool internationaal)
+        public Chauffeur(string personeelsNummer, string voornaam, string achternaam, DateTime geboortedatum, bool internationaal)
         {
             ZetPersoneelsNummer(personeelsNummer);
-            ZetNaam(naam);
+            ZetNaam(voornaam);
+            ZetAchternaam(achternaam);
             ZetGeboortedatum(geboortedatum);
             ZetBoolean(internationaal);
         }
 
-        public int PersoneelsNummer { get; private set; }
+        public string PersoneelsNummer { get; private set; }
+        public string Achternaam { get; set; }
 
-        public string Naam { get; private set; }
+        public string Voornaam { get; private set; }
 
         public DateTime Geboortedatum { get; private set; }
 
@@ -29,11 +31,22 @@
         {
             if (string.IsNullOrWhiteSpace(naam))
             {
-                ChauffeurException ex = new ChauffeurException("Chauffeur: Naam is leeg!");
+                ChauffeurException ex = new ChauffeurException("Chauffeur: Voornaam is leeg!");
                 ex.Data.Add("naam", naam);
                 throw ex;
             }
-            this.Naam = naam;
+            this.Voornaam = naam;
+        }
+
+        public void ZetAchternaam(string achternaam)
+        {
+            if (string.IsNullOrWhiteSpace(achternaam))
+            {
+                ChauffeurException ex = new ChauffeurException("Chauffeur: Achternaam is leeg!");
+                ex.Data.Add("achternaam", achternaam);
+                throw ex;
+            }
+            this.Achternaam = achternaam;
         }
 
         public void ZetGeboortedatum(DateTime geboortedatum)
@@ -47,9 +60,9 @@
             this.Geboortedatum = geboortedatum;
         }
 
-        public void ZetPersoneelsNummer(int personeelsnummer)
+        public void ZetPersoneelsNummer(string personeelsnummer)
         {
-            if (personeelsnummer <= 0)
+            if (personeelsnummer == "0")
             {
                 ChauffeurException ex = new ChauffeurException("Chauffeur: Personeelsnummer klopt niet!");
                 ex.Data.Add("personeelsummer", personeelsnummer);
@@ -73,18 +86,18 @@
         {
             if (internationaal)
             {
-                Console.WriteLine($"{Naam} rijdt internationaal");
+                Console.WriteLine($"{Voornaam} rijdt internationaal");
             }
             else
             {
-                Console.WriteLine($"{Naam} rijdt niet internationaal");
+                Console.WriteLine($"{Voornaam} rijdt niet internationaal");
             }
             return internationaal;
         }
 
         public override string ToString()
         {
-            return $"Naam:{Naam}\nGeboortedatum: {Geboortedatum.ToShortDateString()}\nPersoneelsnummer: {PersoneelsNummer},\n{BoolToText(Internationaal)}\nVrachtwagen: {Vrachtwagen.ToString()}";
+            return $"Naam:{Voornaam}\nGeboortedatum: {Geboortedatum.ToShortDateString()}\nPersoneelsnummer: {PersoneelsNummer},\n{BoolToText(Internationaal)}\nVrachtwagen: {Vrachtwagen.ToString()}";
         }
 
     }

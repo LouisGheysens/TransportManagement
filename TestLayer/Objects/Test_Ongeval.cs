@@ -3,7 +3,7 @@
     public class Test_Ongeval
     {
         private Vrachtwagen _vrachtwagen1 = new Vrachtwagen("3GNEC16TX1G242965", "Volkswagen", "polo", 20000, false, BussinesLayer.Enums.Brandstof.Benzine);
-        private Chauffeur _chauffeur1 = new(1, "Louis", new System.DateTime(2001, 06, 05), true);
+        private Chauffeur _chauffeur1 = new("1", "Louis", "Gheysens", new System.DateTime(2001, 06, 05), true);
 
         [Fact]
         public void Test_ZetPlaats_Valid()
