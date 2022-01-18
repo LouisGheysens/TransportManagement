@@ -13,6 +13,7 @@
             ZetEnum(graad);
         }
 
+        public int Id { get; set; }
         public Boolean Arbeidsongeval { get; private set; }
 
         public Vrachtwagen Vrachtwagen { get; private set; }

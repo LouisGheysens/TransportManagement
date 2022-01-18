@@ -2,10 +2,9 @@
 {
     public interface IOngevalRepository
     {
-        bool BestaatOngeval(string plaats);
-        Ongeval VoegOngevalToe(Ongeval ongeval, Chauffeur chaffeur, Vrachtwagen vrachtwagen);
-        void VerwijderOngeval(string plaats);
-        Ongeval UpdateOngeval(Ongeval ongeval);
-        ICollection<Ongeval> ZoekOngevallen(Boolean? arbeidsongeval, Chauffeur chaffeur, Vrachtwagen vrachtwagen, string plaats, DateTime? datum, Boolean? pertetotal, ErnstGraad graad);
+        bool BestaatOngeval(Ongeval ongeval);
+        Ongeval VoegOngevalToe(Ongeval ongeval);
+        void VerwijderOngeval(Ongeval ongeval);
+        IReadOnlyCollection<Ongeval> ZoekOngevallen(Boolean? arbeidsongeval, string plaats, DateTime? datum, Boolean? pertetotal, ErnstGraad graad);
     }
 }

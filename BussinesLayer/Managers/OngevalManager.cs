@@ -9,34 +9,22 @@
             this._repo = repo;  
         }
 
-        public bool BestaatOngeval(string plaats)
+        public bool BestaatOngeval(Ongeval ongeval)
         {
             try
             {
-                return _repo.BestaatOngeval(plaats);
+                return _repo.BestaatOngeval(ongeval);
             }catch(Exception ex)
             {
                 throw new OngevalException("Ongeval: BestaatOngeval - gefaald", ex);
             }
         }
 
-        public Ongeval UpdateOngeval(Ongeval ongeval)
+        public void VerwijderOngeval(Ongeval ongeval)
         {
             try
             {
-                return _repo.UpdateOngeval(ongeval);
-            }
-            catch (Exception ex)
-            {
-                throw new OngevalException("Ongeval: UpdateOngeval - gefaald", ex);
-            }
-        }
-
-        public void VerwijderOngeval(string plaats)
-        {
-            try
-            {
-                 _repo.VerwijderOngeval(plaats);
+                 _repo.VerwijderOngeval(ongeval);
             }
             catch (Exception ex)
             {
@@ -44,11 +32,11 @@
             }
         }
 
-        public Ongeval VoegOngevalToe(Ongeval ongeval, Chauffeur chaffeur, Vrachtwagen vrachtwagen)
+        public Ongeval VoegOngevalToe(Ongeval ongeval)
         {
             try
             {
-                return _repo.VoegOngevalToe(ongeval, chaffeur, vrachtwagen);
+                return _repo.VoegOngevalToe(ongeval);
             }
             catch (Exception ex)
             {
@@ -56,11 +44,11 @@
             }
         }
 
-        public ICollection<Ongeval> ZoekOngevallen(bool? arbeidsongeval, Chauffeur chaffeur, Vrachtwagen vrachtwagen, string plaats, DateTime? datum, bool? pertetotal, ErnstGraad graad)
+        public IReadOnlyCollection<Ongeval> ZoekOngevallen(bool? arbeidsongeval, string plaats, DateTime? datum, bool? pertetotal, ErnstGraad graad)
         {
             try
             {
-                return _repo.ZoekOngevallen(arbeidsongeval, chaffeur, vrachtwagen, plaats, datum, pertetotal, graad);
+                return _repo.ZoekOngevallen(arbeidsongeval, plaats, datum, pertetotal, graad);
             }
             catch (Exception ex)
             {
