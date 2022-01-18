@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3iVX5iMrWEq216B/IpWvuC+DJVJ9lcxSpVUcvv9lORi7Xhz2Nghz8rOAnTjznWjMLRCCJUWlTuvoP7acYVcDfg==",
+  "dgSpecHash": "MGIbsqKA0jJPuBlFPhT6eFpg/Glg5lkQXspTMtHF+FB7CFLFMlbbClbsrgP5WvGf2/Uq5dcGY1XiuNlqrMvM1g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eigenaar\\TransportManagement\\WPF\\WPF.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Eigenaar\\.nuget\\packages\\materialdesigncolors\\2.0.4\\materialdesigncolors.2.0.4.nupkg.sha512",
+    "C:\\Users\\Eigenaar\\.nuget\\packages\\materialdesignthemes\\4.3.0\\materialdesignthemes.4.3.0.nupkg.sha512"
+  ],
   "logs": []
 }
