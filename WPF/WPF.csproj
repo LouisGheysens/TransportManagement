@@ -8,13 +8,33 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
+    <Page Remove="ChauffeurWindows\ChauffeurToevoegenWindow.xaml" />
+    <Page Remove="ChauffeurWindows\ChauffeurWindow.xaml" />
+    <Page Remove="OngevalWindows\OngevalWindow.xaml" />
+    <Page Remove="VrachtwagenWindows\VrachtwagenToevoegenWindow.xaml" />
+    <Page Remove="VrachtwagenWindows\VrachtwagenWindow.xaml" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ChauffeurWindows\" />
-    <Folder Include="OngevalWindows\" />
-    <Folder Include="VrachtwagenWindows\" />
+    <EmbeddedResource Include="ChauffeurWindows\ChauffeurToevoegenWindow.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChauffeurWindows\ChauffeurWindow.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OngevalWindows\OngevalWindow.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VrachtwagenWindows\VrachtwagenToevoegenWindow.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VrachtwagenWindows\VrachtwagenWindow.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
   </ItemGroup>
 
 </Project>
