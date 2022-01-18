@@ -9,7 +9,7 @@
             this._repo = repo;
         }
 
-        public bool BestaatChauffeur(int personeelsnummer)
+        public bool BestaatChauffeur(string personeelsnummer)
         {
             try
             {
@@ -20,11 +20,11 @@
             }
         }
 
-        public void DeleteChaffeur(int personeelsnummer)
+        public void DeleteChaffeur(Chauffeur chauffeur)
         {
             try
             {
-                 _repo.DeleteChaffeur(personeelsnummer);
+                 _repo.DeleteChaffeur(chauffeur);
             }
             catch (Exception ex)
             {
@@ -32,7 +32,7 @@
             }
         }
 
-        public Chauffeur SelecteerChauffeur(int personeelsnummer)
+        public Chauffeur SelecteerChauffeur(string personeelsnummer)
         {
             try
             {
@@ -68,7 +68,7 @@
             }
         }
 
-        public ICollection<Chauffeur> ZoekChauffeurs(int? personeelsnummer, string naam, DateTime? geboortedatum, bool? internationaal)
+        public IReadOnlyCollection<Chauffeur> ZoekChauffeurs(string personeelsnummer, string naam, DateTime? geboortedatum, bool? internationaal)
         {
             try
             {
