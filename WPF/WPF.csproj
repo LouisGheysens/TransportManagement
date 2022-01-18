@@ -7,4 +7,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ChauffeurWindows\" />
+    <Folder Include="OngevalWindows\" />
+    <Folder Include="VrachtwagenWindows\" />
+  </ItemGroup>
+
 </Project>
