@@ -95,6 +95,16 @@
             return internationaal;
         }
 
+        public void UpdateVrachtwagen(Vrachtwagen vrachtwagen)
+        {
+            if (vrachtwagen == this.Vrachtwagen) throw new ChauffeurException("Chaffeur: UpdateVrachtwagen - er werden geen verschillen gevonden");
+            this.Vrachtwagen = vrachtwagen;
+            if(vrachtwagen.Chauffeur != this)
+            {
+                vrachtwagen.UpdateChauffeur(this);
+            }
+        }
+
         public override string ToString()
         {
             return $"Naam:{Voornaam}\nGeboortedatum: {Geboortedatum.ToShortDateString()}\nPersoneelsnummer: {PersoneelsNummer},\n{BoolToText(Internationaal)}\nVrachtwagen: {Vrachtwagen.ToString()}";

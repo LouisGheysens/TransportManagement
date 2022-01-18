@@ -8,3 +8,4 @@ global using BussinesLayer.Managers;
 global using BussinesLayer.Exceptions;
 global using BussinesLayer.Interfaces;
 global using DataLayer.Exceptions;
+global using System.Data;

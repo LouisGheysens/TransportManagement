@@ -2,7 +2,7 @@
 {
     public class Vrachtwagen
     {
-        public Vrachtwagen(string chassisNummer, string merk, string model, float gewicht, bool heeftAanhangWagen, Brandstof brandstof, Chauffeur? chauffeur) : this(chassisNummer, merk, model, gewicht, heeftAanhangWagen, brandstof)
+        public Vrachtwagen(string chassisNummer, string merk, string model, float gewicht, bool heeftAanhangWagen, Brandstof brandstof, Chauffeur chauffeur) : this(chassisNummer, merk, model, gewicht, heeftAanhangWagen, brandstof)
         {
             this.Chauffeur = chauffeur;
         }
@@ -29,7 +29,7 @@
 
         public Brandstof Brandstof { get; private set; }
 
-        public Chauffeur? Chauffeur { get; private set; }
+        public Chauffeur Chauffeur { get; private set; }
 
         public void ZetChassisnummer(string chassisnummer)
         {
@@ -109,9 +109,20 @@
             }
             this.Brandstof = brandstof;
         }
+
+        public void UpdateChauffeur(Chauffeur chauffeur)
+        {
+            if(chauffeur != null)
+            {
+                this.Chauffeur = chauffeur;
+                if(chauffeur.Vrachtwagen != this) { chauffeur.UpdateVrachtwagen(this); }
+            }
+            else { this.Chauffeur = chauffeur; }
+        }
+
         public override string ToString()
         {
-            return $"Chassisnummer: {ChassisNummer}\nMerk: {Merk}\nModel: {Model}\nGewicht: {Gewicht}\nAanhangwagen: {BoolToText(HeeftAanhangWagen)}\nBrandstof: {Brandstof.ToString()}\n{Chauffeur?.ToString()}";
+            return $"Chassisnummer: {ChassisNummer}\nMerk: {Merk}\nModel: {Model}\nGewicht: {Gewicht}\nAanhangwagen: {BoolToText(HeeftAanhangWagen)}\nBrandstof: {Brandstof.ToString()}\n{Chauffeur.ToString()}";
         }
 
     }

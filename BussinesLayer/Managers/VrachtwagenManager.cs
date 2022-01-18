@@ -21,11 +21,11 @@
             }
         }
 
-        public void VerwijderVrachtwagen(string chassisnummer)
+        public void VerwijderVrachtwagen(Vrachtwagen vrachtwagen)
         {
             try
             {
-                 _repo.VerwijderVrachtwagen(chassisnummer);
+                 _repo.VerwijderVrachtwagen(vrachtwagen);
             }
             catch (Exception ex)
             {
@@ -33,11 +33,11 @@
             }
         }
 
-        public Vrachtwagen SelecteerVrachtwagen(Vrachtwagen vrachtwagen)
+        public Vrachtwagen SelecteerVrachtwagen(string chassisnummer)
         {
             try
             {
-                return _repo.SelecteerVrachtwagen(vrachtwagen);
+                return _repo.SelecteerVrachtwagen(chassisnummer);
             }
             catch (Exception ex)
             {
@@ -69,7 +69,7 @@
             }
         }
 
-        public ICollection<Vrachtwagen> ZoekVrachtwagen(string chassisnummer, string merk, string model, Brandstof brandstof, float gewicht)
+        public IReadOnlyCollection<Vrachtwagen> ZoekVrachtwagen(string chassisnummer, string merk, string model, Brandstof brandstof, float gewicht)
         {
             try
             {
