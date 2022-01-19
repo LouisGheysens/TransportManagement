@@ -8,6 +8,15 @@
     <Compile Update="ChauffeurWindows\ChauffeurWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Login\AdminWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Login\LoginWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Login\SecretWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="OngevalWindows\OngevalWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -17,5 +26,31 @@
     <Compile Update="VrachtwagenWindows\VrachtwagenWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ChauffeurWindows\ChauffeurToevoegenWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ChauffeurWindows\ChauffeurWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login\AdminWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Login\SecretWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="OngevalWindows\OngevalWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VrachtwagenWindows\VrachtwagenToevoegenWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="VrachtwagenWindows\VrachtwagenWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>

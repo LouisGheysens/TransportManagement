@@ -18,6 +18,14 @@ Brandstof NVARCHAR(1000),
 Chauffeur NVARCHAR(50) NULL
 );
 
+
+CREATE TABLE ChauffeurAfbeeldingen(
+Chauffeur NVARCHAR(100) PRIMARY KEY NOT NULL,
+AfbeeldingNaam NVARCHAR(50) NULL,
+Afbeelding VARBINARY(MAX) NULL,
+)
+
+
 CREATE TABLE Ongeval(
 Vrachtwagen NVARCHAR(100) NOT NULL,
 Chauffeur NVARCHAR(100) NOT NULL,

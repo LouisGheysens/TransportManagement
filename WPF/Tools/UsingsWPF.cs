@@ -1,0 +1,21 @@
+﻿global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+global using BussinesLayer.Objects;
+global using BussinesLayer.Interfaces;
+global using System.ComponentModel;
+global using System.Threading;
+global using System.Windows.Controls;
+global using System.Security;
+global using System.Windows;
+global using WPF.ViewModel;
+global using System.Windows.Input;
+global using System.Security.Permissions;
+global using WPF.ViewModel.Commands;
+global using WPF.Login;
+global using WPF.ChauffeurWindows;
+global using WPF.VrachtwagenWindows;
+global using WPF.OngevalWindows;
+

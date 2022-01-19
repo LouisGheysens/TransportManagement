@@ -27,6 +27,10 @@
 
         public Vrachtwagen Vrachtwagen { get; private set; }
 
+        public List<MediaChauffeur> Afbeeldingen { get; set; }
+
+
+
         public void ZetNaam(string naam)
         {
             if (string.IsNullOrWhiteSpace(naam))

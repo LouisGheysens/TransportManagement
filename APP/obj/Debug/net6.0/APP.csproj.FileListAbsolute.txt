@@ -4,7 +4,6 @@ C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\APP.runtimeconfig.jso
 C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\APP.dll
 C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\ref\APP.dll
 C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\APP.pdb
-C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.csproj.AssemblyReference.cache
 C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.AssemblyInfoInputs.cache
 C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.AssemblyInfo.cs
@@ -13,3 +12,9 @@ C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.dll
 C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\ref\APP.dll
 C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.pdb
 C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.genruntimeconfig.cache
+C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Eigenaar\TransportManagement\APP\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Eigenaar\TransportManagement\APP\obj\Debug\net6.0\APP.csproj.CopyComplete

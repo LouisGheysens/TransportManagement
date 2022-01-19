@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2A7D3t3Nwm+bMTgQUlp/94p3dposl3VFZjeOn5cc5XCGo6JaXVKEJDFR0t3RghbBhRpBSLL9amsifunxhd5zmw==",
+  "dgSpecHash": "RW/Rh2TKVJJYNgzBzf7NyKFBPaVnf9H3m19bUu97TsYFsoR20rHUtunxMONUvV7yvMpyfzE/JGvtlSEQEps0bg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eigenaar\\TransportManagement\\APP\\APP.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Eigenaar\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Eigenaar\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

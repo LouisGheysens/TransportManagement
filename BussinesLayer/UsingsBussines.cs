@@ -8,3 +8,6 @@ global using BussinesLayer.Enums;
 global using BussinesLayer.Validators;
 global using BussinesLayer.Objects;
 global using BussinesLayer.Interfaces;
+global using System.Drawing;
+global using System.Security.Principal;
+global using System.Security.Cryptography;
