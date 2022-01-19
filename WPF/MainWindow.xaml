@@ -4,9 +4,44 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Background="LightBlue">
+    <Window.Resources>
+    </Window.Resources>
     <Grid>
+        <materialDesign:PackIcon Kind="TruckCheckOutline"
+                                 Height="179" Width="290" Margin="-10,255,0,0" />
 
+        <Button
+      Style="{StaticResource MaterialDesignRaisedDarkButton}"
+      ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+      Content="Ongeval melden"
+      x:Name="btn_NavigatieOngeval"
+      IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Margin="575,159,0,243" Click="btn_NavigatieOngeval_Click" />
+
+        <Button
+      Style="{StaticResource MaterialDesignRaisedDarkButton}"
+      ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+      Content="Vrachtwagen"
+      x:Name="btn_VrachtwagenNavigatie"
+      IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Margin="575,102,0,300" Click="btn_VrachtwagenNavigatie_Click" />
+
+        <Button
+      Style="{StaticResource MaterialDesignRaisedDarkButton}"
+      ToolTip="Resource name: MaterialDesignRaisedLightDarkButton"
+      Content="Chauffeur"
+      x:Name="btn_ChauffeurNavigatie"
+      IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" Margin="575,49,0,353" Click="btn_ChauffeurNavigatie_Click"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="100"
+               Margin="10,10,0,0" VerticalAlignment="Top" Width="285"
+               Source="Tools/Media/TransportLogo.PNG"/>
     </Grid>
 </Window>

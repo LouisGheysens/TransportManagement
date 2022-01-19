@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "30k2/ihoYTgQy4mnYWsCY7umY4tvY/httWWZ5FAG7TM5lob4zD1HagTyq/CC28wNcrK+Vp49juGLe/9R68F5Mg==",
+  "dgSpecHash": "Ovo07hZeZ+G+I0jMpslpjLtBTLFVqQd0TmgdJDu6hSNA3wRzrJJAEhln0ZNpyD6vHBgLhRjJ5tjoaNFJNR8Cdg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Eigenaar\\TransportManagement\\BussinesLayer\\BussinesLayer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Eigenaar\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Eigenaar\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

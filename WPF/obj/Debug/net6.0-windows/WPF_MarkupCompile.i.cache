@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Eigenaar\TransportManagement\WPF\App.xaml
-11407045341
+9-23162353
 
-102002919167
-196-1861858033
-MainWindow.xaml;
+17520136723
+211655044321
+ChauffeurWindows\ChauffeurToevoegenWindow.xaml;ChauffeurWindows\ChauffeurWindow.xaml;Login\AdminWindow.xaml;Login\LoginWindow.xaml;Login\SecretWindow.xaml;MainWindow.xaml;OngevalWindows\OngevalWindow.xaml;VrachtwagenWindows\VrachtwagenToevoegenWindow.xaml;VrachtwagenWindows\VrachtwagenWindow.xaml;
 
-False
+True
 

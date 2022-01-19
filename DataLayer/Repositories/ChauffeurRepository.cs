@@ -35,9 +35,11 @@
             }
             string queryChaffeur="DELETE FROM Chauuffeur WHERE personeelsnummer=@personeelsnummer";
             string queryVrachtwagen="UPDATE Vrachtwagen SET Chauffeur = NULL WHERE chassisnummer=@chassisnummer";
+            string queryMedia = "DELETE FROM ChauffeurAfbeeldingen WHERE Chauffeur = @personeelsnummer";
             SqlConnection connection = ConnectionClass.GetConnection();
             using SqlCommand cmdChauffeur = new(queryChaffeur, connection);
             using SqlCommand cmdVrachtwagen = new(queryVrachtwagen, connection);
+            using SqlCommand cmdMedia = new(queryMedia, connection);
             connection.Open();
             SqlTransaction transaction = connection.BeginTransaction();
             try
@@ -55,7 +57,14 @@
                     cmdVrachtwagen.Parameters.AddWithValue("@chassisnummer", chauffeur.Vrachtwagen.ChassisNummer);
                 }
                 #endregion
-            }catch(Exception ex)
+
+                #region MediaChauffeur
+                cmdMedia.Transaction = transaction;
+                cmdMedia.Parameters.AddWithValue("@personeelsnummer", chauffeur.PersoneelsNummer);
+                cmdMedia.ExecuteNonQuery();
+                #endregion
+            }
+            catch (Exception ex)
             {
                 transaction.Rollback();
                 throw new ChauffeurRepositoryException("ChauffeurRepository: VerwijderChauffeur - gefaald", ex);

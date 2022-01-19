@@ -8,33 +8,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Page Remove="ChauffeurWindows\ChauffeurToevoegenWindow.xaml" />
-    <Page Remove="ChauffeurWindows\ChauffeurWindow.xaml" />
-    <Page Remove="OngevalWindows\OngevalWindow.xaml" />
-    <Page Remove="VrachtwagenWindows\VrachtwagenToevoegenWindow.xaml" />
-    <Page Remove="VrachtwagenWindows\VrachtwagenWindow.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="ChauffeurWindows\ChauffeurToevoegenWindow.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChauffeurWindows\ChauffeurWindow.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OngevalWindows\OngevalWindow.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VrachtwagenWindows\VrachtwagenToevoegenWindow.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VrachtwagenWindows\VrachtwagenWindow.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BussinesLayer\BussinesLayer.csproj" />
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Tools\Media\TransportLogo.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

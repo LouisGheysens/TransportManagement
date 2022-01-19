@@ -100,3 +100,8 @@ C:\Users\Eigenaar\TransportManagement\TestLayer\obj\Debug\net6.0\TestLayer.dll
 C:\Users\Eigenaar\TransportManagement\TestLayer\obj\Debug\net6.0\ref\TestLayer.dll
 C:\Users\Eigenaar\TransportManagement\TestLayer\obj\Debug\net6.0\TestLayer.pdb
 C:\Users\Eigenaar\TransportManagement\TestLayer\obj\Debug\net6.0\TestLayer.genruntimeconfig.cache
+C:\Users\Eigenaar\TransportManagement\TestLayer\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Eigenaar\TransportManagement\TestLayer\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\Eigenaar\TransportManagement\TestLayer\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Eigenaar\TransportManagement\TestLayer\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Eigenaar\TransportManagement\TestLayer\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll

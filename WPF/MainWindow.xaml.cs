@@ -24,5 +24,26 @@ namespace WPF
         {
             InitializeComponent();
         }
+
+        private void btn_NavigatieOngeval_Click(object sender, RoutedEventArgs e)
+        {
+            OngevalWindow ongevalWindow = new();
+            ongevalWindow.Show();
+            this.Close();
+        }
+
+        private void btn_VrachtwagenNavigatie_Click(object sender, RoutedEventArgs e)
+        {
+            VrachtwagenWindow vrachtwagenWindow = new();
+            vrachtwagenWindow.Show();
+            this.Close();
+        }
+
+        private void btn_ChauffeurNavigatie_Click(object sender, RoutedEventArgs e)
+        {
+            ChauffeurWindow chauffeurWindow = new();
+            chauffeurWindow.Show();
+            this.Close();
+        }
     }
 }
